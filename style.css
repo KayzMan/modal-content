@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-image: url("./beach.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modalBtn{
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.modalBtn hr{
+    margin: 6px 10px;
+    width: 4rem;
+}
+
+.modal{
+    background: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content{
+    background: white;
+    padding: 5px 20px;
+    width: 80%;
+    max-width: 600px;
+    height: 200px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.modal-content h1{
+    font-size: 2.5rem;
+    font-weight: lighter;
+}
+
+.modal-content p{
+    font-weight: lighter
+}
+
+
+.modal-content .topbar{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    color: red;
+    font-size: 30px;
+}
+
+.modal-content #yesBtn{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+
+.modal-content #yesBtn img{
+    width: 100%;
+    height: 100%;
+}
+
+.modal-content #closeBtn{
+    cursor: pointer;
+}
+
+.modal-content .modal-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hide{
+    display: none;
+}
+
+@media screen and (max-width: 1200px){
+    .modal-content h1{
+        font-size: 3rem;
+    }
+    .modal-content p{
+        font-size: 2rem;
+    }
+    .topbar{
+        font-size: 40px;
+    }
+}
